@@ -6,6 +6,10 @@ import org.scalarules.finance.nl._
 import org.scalarules.example.ExampleGlossary._
 import org.scalarules.dsl.ext.ListDerivationHelper._
 
+/**
+  * Example scenario of calculcating how much you either owe in taxes, or you should be reimbursed for.
+  *
+  */
 class ExampleDerivation extends Berekening (
 
   Gegeven (altijd)

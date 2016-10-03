@@ -5,6 +5,11 @@ import org.scalarules.engine.{Context, Evaluation}
 
 import scala.language.implicitConversions
 
+/**
+  * This is and ad-hoc extension to the Scala Rules DSL. We will need to merge it into the DSL itself.
+  * It allows the use of an ad-hoc List of Facts to be used where a single DslEvaluation of type List
+  * is expected.
+  */
 object ListDerivationHelper {
 
   private[this] def constructDslEvaluation[A](dslEvals: List[DslEvaluation[A]]): DslEvaluation[List[A]] = {

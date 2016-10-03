@@ -3,6 +3,9 @@ package org.scalarules.example
 import org.scalarules.finance.nl._
 import org.scalarules.utils.Glossary
 
+/**
+  * Contains the facts as used in the ExampleDerivation class.
+  */
 object ExampleGlossary extends Glossary {
 
   val BaseIncome = defineFact[Bedrag]
@@ -26,8 +29,8 @@ object ExampleGlossary extends Glossary {
 
   val ActualHealthCostReimbursement = defineFact[Bedrag]
 
-
-  val TaxReturnAmount = defineFact[Bedrag]
-  val TaxDueAmount = defineFact[Bedrag]
+  // Note: these two definition demonstrate that Facts can be optionally defined with a description.
+  val TaxReturnAmount = defineFact[Bedrag]("Amount you should be receiving from your local Tax agency")
+  val TaxDueAmount = defineFact[Bedrag]("Amount you are to be paying to your local Tax agency")
 
 }
