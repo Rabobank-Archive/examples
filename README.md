@@ -24,7 +24,7 @@ an entire glossary.
 This demonstrates the actual usage of the DSL to create rules. The current example uses the Dutch DSL, since the
 English version is still in progress. Once the DSL has been translated, a translated example will follow.
 
-Important to note are the **imports** at the top of this file:
+Important to note are the **imports** at the top of the Example Derivation file:
 
 ```scala
 import org.scalarules.dsl.nl.grammar._
