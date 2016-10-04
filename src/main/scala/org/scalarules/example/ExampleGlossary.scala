@@ -29,7 +29,7 @@ object ExampleGlossary extends Glossary {
 
   val ActualHealthCostReimbursement = defineFact[Bedrag]
 
-  // Note: these two definition demonstrate that Facts can be optionally defined with a description.
+  // Note: these two definitions demonstrate that Facts can also be defined with an optional description.
   val TaxReturnAmount = defineFact[Bedrag]("Amount you should be receiving from your local Tax agency")
   val TaxDueAmount = defineFact[Bedrag]("Amount you are to be paying to your local Tax agency")
 
